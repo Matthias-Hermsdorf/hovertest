@@ -1,0 +1,27 @@
+<!-- Das ist eine Testumgebung um Mouse-, Touch und Pointerevents zu testen. Es werden die in js zugänglichen Fenstergrößen 
+gelistet und allerlei andere Events gefeuert.
+
+@author: Matthias Hermsdorf @ queo 
+-->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		
+		<script type="text/javascript" src="js/hovertest.js"></script>
+		
+		<style type="text/css">
+		
+			p { margin: 0 0 5px 0; }
+		</style>
+	</head>
+	<body>
+		<div class="buttons" style="width: 40%; float: left;">
+			<button class="events" style="width:100%; height: 25%; margin-bottom: 30px;">Logge Events</button>
+			<button class="windowsize" style="width:100%; height: 10%; margin-bottom: 30px;">Logge Fenstergröße</button>
+			<button class="log-hints" style="width:100%; height: 10%;">Logge Beschreibungen</button>
+		</div>
+		<div style="width: 57%; min-height: 100%; position: absolute; right: 0; background: #a0cdf3; padding: 5px;" class="logarea"></div>
+	</body>
+</html>

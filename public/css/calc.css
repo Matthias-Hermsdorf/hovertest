@@ -1,0 +1,260 @@
+#timeline {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAACklEQVQIHWNgAAAAAgABz8g15QAAAABJRU5ErkJggg==') /*/Images/Unbenannt.png*/ top center repeat-y;
+  width: 820px;
+  padding: 50px 0;
+  margin: 0 auto 50px auto;
+  margin-top: 50px;
+  font-family: Calibri, sans-serif;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+}
+#timeline:before,
+#timeline:after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+}
+#timeline:after {
+  margin-left: -7px;
+  background: none;
+  border: 7px solid transparent;
+  border-top-color: black;
+  width: 0;
+  height: 0;
+  top: auto;
+  bottom: -7px;
+}
+#timeline .fadeIn {
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  -webkit-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-duration: 0.65s;
+  -o-animation-duration: 0.65s;
+  -webkit-animation-duration: 0.65s;
+  animation-duration: 0.65s;
+}
+#timeline .fadeOut {
+  -moz-animation: fadeOut ease-in 1;
+  -o-animation: fadeOut ease-in 1;
+  -webkit-animation: fadeOut ease-in 1;
+  animation: fadeOut ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-duration: 0.65s;
+  -o-animation-duration: 0.65s;
+  -webkit-animation-duration: 0.65s;
+  animation-duration: 0.65s;
+}
+#timeline .newitem {
+  background-color: lightblue;
+}
+#timeline li {
+  position: relative;
+  clear: both;
+  float: left;
+  width: 318px;
+  padding: 10px;
+  background-color: lightcoral;
+  border: 1px solid #d8d566;
+  text-align: right;
+}
+#timeline li form {
+  width: 100%;
+  float: left;
+  padding-left: 3px;
+}
+#timeline li:before,
+#timeline li:after {
+  content: " ";
+  width: 93px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+#timeline li:nth-of-type(even) {
+  float: right;
+  text-align: right;
+}
+#timeline li:nth-of-type(even):after {
+  left: auto;
+  right: 100%;
+}
+#timeline li.resolved {
+  background-color: lightgreen;
+}
+#timeline li p {
+  float: left;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+#timeline li span {
+  float: right;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+#timeline li .header {
+  overflow: hidden;
+  font-size: large;
+}
+#timeline li .body {
+  overflow: hidden;
+}
+#timeline li .body span {
+  width: 70%;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+#timeline .footer {
+  overflow: hidden;
+}
+#timeline .footer form {
+  width: auto;
+  float: right;
+  padding-left: 3px;
+}
+.firsttext {
+  font-weight: normal;
+}
+.line {
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-ms-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.breakscore {
+  position: relative;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: InactiveCaption;
+}
+.editItem {
+  width: 318px;
+  padding: 15px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  background-color: Highlight;
+  border: 1px solid #d8d566;
+  opacity: 0;
+  -moz-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  -webkit-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-duration: 0.65s;
+  -o-animation-duration: 0.65s;
+  -webkit-animation-duration: 0.65s;
+  animation-duration: 0.65s;
+  font-weight: normal;
+  font-family: Calibri, sans-serif;
+}
+.editItem p {
+  font-weight: bold;
+  font-size: large;
+}
+.editItem input {
+  float: right;
+  width: 65%;
+}
+@font-face {
+  font-family: 'Snow';
+  src: url('/fonts/fauxsnow.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.wintertheme {
+  background-image: url(/Images/desktop_1920x1080thf9z.jpg);
+  background-color: green;
+  background-attachment: fixed;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
